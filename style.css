@@ -23,6 +23,7 @@ body {
 h1 {
     color: white;
     font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom: 20px;
 }
 
@@ -45,6 +46,7 @@ h1 {
 button {
     padding: 10px 20px;
     background-color: teal;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
     border: none;
     border-radius: 5px;
@@ -91,7 +93,8 @@ li:hover {
 
 /* Remove button styling */
 .remove-btn {
-    background-color: #ff6b6b;
+    background-color: teal;
+    font-family: 'Courier New', Courier, monospace;
     border: none;
     padding: 5px 10px;
     color: white;
