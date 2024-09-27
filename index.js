@@ -3,32 +3,36 @@ function addTask() {
     var taskList = document.getElementById('taskList');
     
     // if some one want to enter empty space 
-    if (!taskInput.value.trim()) {
-     return alert("Please enter some text! Todo can't be empty")
+      if (!taskInput.value.trim()) {
+      return alert("Please enter some text! Todo can't be empty")
            
     }
     // New list item Here
-    var li = document.createElement('li');
-    li.textContent = taskInput.value;
+      var li = document.createElement('li');
+      li.textContent = taskInput.value;
 
     // Create a remove button Here
-    var removeButton = document.createElement('button');
-    removeButton.textContent = 'Remove';
-    removeButton.className = 'remove-btn';
-    removeButton.onclick = function () {
-        taskList.removeChild(li);
+      var removeButton = document.createElement('button');
+      removeButton.textContent = 'Remove';
+      removeButton.className = 'remove-btn';
+      removeButton.onclick = function () {
+      taskList.removeChild(li);
     };
 
-    // Add click event to mark as completed
-    li.onclick = function () {
-        li.classList.toggle('completed');
+     // Add click event to mark as completed
+      li.onclick = function () {
+      li.classList.toggle('completed');
     };
 
-      // Append the remove button to the list item
+    // Append the remove button to the list item
       li.appendChild(removeButton);
 
-      // Append the list item to the task list
-      taskList.appendChild(li);
+     // Append the list item to the task list
+       taskList.appendChild(li);
+
+      
+     //Finally  Clear the input field when remove the text
+       taskInput.value = '';
 
 
 }
