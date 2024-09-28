@@ -1,6 +1,10 @@
 body {
+    background-image: url('./image/images.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     font-family: 'Arial', sans-serif;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +17,7 @@ body {
 .container {
     background-color: #333fff;
     border-radius: 50px;
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 25px rgba(214, 173, 173, 0.4);
     padding: 20px;
     width: 450px;
     text-align: center;
@@ -29,9 +33,9 @@ h1 {
 
 /* style of Input field  */
 #taskInput {
-    width: 75%;
+    width: 80%;
     padding: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid black;
     border-radius: 5px;
     margin-bottom: 10px;
     outline: none;
